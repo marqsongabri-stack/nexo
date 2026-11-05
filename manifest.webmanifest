@@ -1,0 +1,60 @@
+{
+  "name": "Nexo Assistente",
+  "short_name": "Nexo",
+  "description": "Afazeres, vendas diárias e gastos num só lugar.",
+  "lang": "pt-BR",
+  "start_url": "./#inicio",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05070A",
+  "theme_color": "#05070A",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ler comprovante",
+      "url": "./#gastos"
+    },
+    {
+      "name": "Venda de hoje",
+      "url": "./#vendas"
+    }
+  ],
+  "share_target": {
+    "action": "./share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "file",
+          "accept": [
+            "image/*",
+            "application/pdf",
+            ".pdf",
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".webp"
+          ]
+        }
+      ]
+    }
+  }
+}
