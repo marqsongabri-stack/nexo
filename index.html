@@ -809,7 +809,7 @@ if('serviceWorker' in navigator){
 setInterval(checkReminders,20000); document.addEventListener('visibilitychange',()=>{if(!document.hidden){checkReminders();render();}});
 
 /* ---------- Nuvem (Supabase): login, sincronização e push ---------- */
-const SUPA='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js';
+const SUPA='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.3/dist/umd/supabase.js';
 const SNAP='nexo.snap';
 const KINDS={
   tasks:{table:'tasks',
